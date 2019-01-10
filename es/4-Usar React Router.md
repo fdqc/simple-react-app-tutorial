@@ -120,7 +120,7 @@ class Menu extends Component {
 export default Menu;
 ```
 
-Aquí importamos el componente `Link` de `reat-router-dom` y cambiamos la "etiqueta" `<a>` por `<Link>` agregando un nuevo atributo `to`. Además, agregamos a el atributo `componentClass={Link}` a nuestros componentes `<NavItem>`. Ahora si, si corremos nuestra aplicación, al navegar mediante los `links`, la página no vuelve a cargarse.
+Aquí importamos el componente `Link` de `react-router-dom` y cambiamos la "etiqueta" `<a>` por `<Link>` agregando un nuevo atributo `to`. Además, agregamos a el atributo `componentClass={Link}` a nuestros componentes `<NavItem>`. Ahora si, si corremos nuestra aplicación, al navegar mediante los `links`, la página no vuelve a cargarse.
 
 ###### La página no existe
 
