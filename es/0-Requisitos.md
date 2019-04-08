@@ -6,5 +6,5 @@
 
 # Empecemos
 
-[Primeros Pasos](1-Primeros Pasos.md)
+[Primeros Pasos](https://github.com/fdqc/simple-react-app-tutorial/blob/master/es/1-Primeros%20Pasos.md)
 
