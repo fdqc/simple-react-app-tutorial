@@ -25,25 +25,23 @@ Ahora si, dentro de nuestra carpeta `componentes` creamos un nuevo archivo que s
 
 ```react
 import React, { Component } from 'react';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 
 class Menu extends Component {
 
   render() {
     return (
-      <Navbar>
-        <Navbar.Header>
-          <Navbar.Brand>
-            <a href="/">Paises-React</a>
-          </Navbar.Brand>
-        </Navbar.Header>
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand>
+         <a href="/">Paises-React</a>
+        </Navbar.Brand>
         <Nav>
-          <NavItem href="/">
+          <Nav.Link href="/">
             Home
-          </NavItem>
-          <NavItem href="/paises">
+          </Nav.Link>
+          <Nav.Link href="/paises">
             Listado de Paises
-          </NavItem>
+          </Nav.Link>
         </Nav>        
       </Navbar>
     );
@@ -60,16 +58,16 @@ Ahora, para poder ver nuestro nuevo menú, debemos importarlo dentro de nuestro 
 
 ```react
 import React, { Component } from 'react';
-import { Grid } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import Menu from './Menu';
 
 class App extends Component {
   render() {
     return (
-      <Grid>
+      <Container>
         <Menu></Menu>
         <h1>Este es mi primer componente</h1>
-      </Grid>
+      </Container>
     );
   }
 }
@@ -77,3 +75,4 @@ class App extends Component {
 export default App;
 ```
 
+[Usar React Router](./4-Usar React Router.md)
