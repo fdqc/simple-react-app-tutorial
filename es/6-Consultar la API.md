@@ -53,7 +53,7 @@ Como ultimo paso, en el método `render()` escribimos una condición. Si nuestro
 ```react
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Grid, Panel, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Container, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 class ListadoPaises extends Component {
   state = {
@@ -76,20 +76,20 @@ class ListadoPaises extends Component {
   render() {
     if (this.state.estaCargando) {
       return (
-        <Grid>
+        <Container>
           <h1>Obteniendo listado...</h1>
-        </Grid>
+        </Container>
       )
     }
     return (
-      <Grid>
-        <Panel>
-          <Panel.Heading>
-            <Panel.Title>
+      <Container>
+        <Card>
+          <Card.Header>
+            <Card.Title>
               Listado de Paises
-            </Panel.Title>
-          </Panel.Heading>
-          <Panel.Body>
+            </Card.Title>
+          </Card.Heading>
+          <Card.Body>
             <ListGroup>
               {this.state.listadoPaises.map( pais => (
                 <ListGroupItem key={pais.codigoPais} header={pais.nombreCortoPais}>
@@ -99,9 +99,9 @@ class ListadoPaises extends Component {
                 </ListGroupItem>
               ))}
             </ListGroup>
-          </Panel.Body>
-        </Panel>
-      </Grid>
+          </Card.Body>
+        </Card>
+      </Container>
     );
   }
 
