@@ -21,3 +21,6 @@ El directorio debería verse así:
 Con `cd paises-app` ingresamos al directorio donde se encuentra nuestra aplicación y con `npm start` creamos una `build` de desarrollo que podamos ver en el navegador ingresando en http://localhost:3000/, aquí podremos ver que la misma funciona correctamente.
 
 Para terminar la ejecución de la `build` de desarrollo presionamos `Ctrl+C`.
+
+[Preparar el Proyecto](./2-Preparar el Proyecto.md)
+
