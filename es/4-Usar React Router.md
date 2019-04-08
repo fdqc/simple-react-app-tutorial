@@ -4,19 +4,19 @@ Si corremos nuestra aplicación como la dejamos en el paso anterior, podemos ver
 
 ###### Crear `Home.js`
 
-Vamos a modificar nuestro componente `App` para que solo contenga el menú y luego muestre los demás componentes dependiendo de la ruta a la que se acceda. Para esto vamos a crear un nuevo componente `Home.js` que contendrá lo nuestro `Grid` y `Header`.
+Vamos a modificar nuestro componente `App` para que solo contenga el menú y luego muestre los demás componentes dependiendo de la ruta a la que se acceda. Para esto vamos a crear un nuevo componente `Home.js` que contendrá nuestro `Container` y `Header`.
 
 ```react
 import React, { Component } from 'react';
-import { Grid } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 class Home extends Component {
 
   render() {
     return (
-      <Grid>
+      <Container>
         <h1>Este es mi primer componente</h1>
-      </Grid>
+      </Container>
     );
   }
 
@@ -67,15 +67,15 @@ Si tratamos de correr ahora nuestra aplicación obtendríamos un error informand
 
 ```react
 import React, { Component } from 'react';
-import { Grid } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 class ListadoPaises extends Component {
 
   render() {
     return (
-      <Grid>
+      <Container>
         <h1>Listado de Paises</h1>
-      </Grid>
+      </Container>
     );
   }
 
@@ -84,43 +84,49 @@ class ListadoPaises extends Component {
 export default ListadoPaises;
 ```
 
-Ahora, si corremos la aplicación vemos que dependiendo de la ruta que visitemos, vamos a ver el componente adecuado pero, el navegador aún sigue recargando la página.
+> Ahora, si corremos la aplicación vemos que dependiendo de la ruta que visitemos, vamos a ver el componente adecuado pero, el navegador aún sigue recargando la página. Vamos a arreglar esto instalando un componente que funciona con `react-bootstrap` con `react-router`. En la consola, escribimos:
+>
+> ```shell
+> npm install --save react-router-bootstrap
+> ```
 
 ###### Actualizar `Menu.js`
 
 ```react
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { Navbar, Nav, NavItem } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
+import { LinkContainer } from 'react-router-bootstrap';
 
 class Menu extends Component {
 
-  render() {
+    render() {
     return (
-      <Navbar>
-        <Navbar.Header>
+      <Navbar bg="light" expand="lg">
+        <LinkContainer href="/" to="/">
           <Navbar.Brand>
-            <Link href="/" to="/">Paises-React</Link>
+            Paises-React
           </Navbar.Brand>
-        </Navbar.Header>
+        </LinkContainer>
         <Nav>
-          <NavItem componentClass={Link} href="/" to="/">
-            Home
-          </NavItem>
-          <NavItem componentClass={Link} href="/paises" to="/paises">
-            Listado de Paises
-          </NavItem>
+        <LinkContainer href="/" to="/">
+            <Nav.Link>
+              Home
+            </Nav.Link>
+          </LinkContainer>
+          <LinkContainer href="/paises" to="/paises">
+            <Nav.Link>
+              Listado de Paises
+            </Nav.Link>
+          </LinkContainer>
         </Nav>
       </Navbar>
     );
   }
 
-}
-
 export default Menu;
 ```
 
-Aquí importamos el componente `Link` de `react-router-dom` y cambiamos la "etiqueta" `<a>` por `<Link>` agregando un nuevo atributo `to`. Además, agregamos a el atributo `componentClass={Link}` a nuestros componentes `<NavItem>`. Ahora si, si corremos nuestra aplicación, al navegar mediante los `links`, la página no vuelve a cargarse.
+Aquí importamos el componente `LinkContainer` de `react-router-bootstrap` y dentro insertamos a nuestro `Navbar.Brand`, luego agregamos los atributos **`href`** y **`to`** al contenedor de links. Debemos hacer lo mismo con los componentes `Nav.Link`. Ahora si, si corremos nuestra aplicación, al navegar mediante los `links`, la página no vuelve a cargarse.
 
 ###### La página no existe
 
@@ -128,15 +134,15 @@ Cuando intentamos navegar a una dirección que no existe, nuestra aplicación no
 
 ```react
 import React, { Component } from 'react';
-import { Grid } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 class NoExiste extends Component {
 
   render() {
     return (
-      <Grid>
+      <Container>
         <h1>La página que buscas no existe!</h1>
-      </Grid>
+      </Container>
     );
   }
 
@@ -178,3 +184,6 @@ export default App;
 Notemos, que agregamos un `Route` nuevo, donde no especificamos el `path`, pero si el componente. De esta forma, le decimos a `React` que cuando reciba el pedido de cualquier ruta que no este definida, debe mostrar el componente `NoExiste`.
 
 [^Nota]: El componente `NoExiste` debe ir siempre al final.
+
+[Simular una API](./5-Simular una API.md)
+
