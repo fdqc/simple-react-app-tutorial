@@ -78,3 +78,5 @@ npm run start
 ```
 
 Vemos que podemos consultar nuestra `API` de pruebas en http://localhost:3004/paises.
+
+[Consultar API](./6-Consultar la API.md)
