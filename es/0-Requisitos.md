@@ -6,5 +6,5 @@
 
 # Empecemos
 
-[Primeros Pasos](./1-Primeros Pasos.md)
+[Primeros Pasos](1-Primeros Pasos.md)
 
