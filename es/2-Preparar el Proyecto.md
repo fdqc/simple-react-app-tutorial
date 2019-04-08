@@ -54,4 +54,4 @@ También podemos borrar `logo.svg` que ya no es necesario.
 
 Ahora, si volvemos a la consola y corremos `npm run start` deberíamos ver en nuestro navegador una pantalla en blanco con un `Header` que dice "Este es mi primer componente".
 
-[Crear el Menu](./3-Creando el Menu.md)
+[Crear el Menu](https://github.com/fdqc/simple-react-app-tutorial/blob/master/es/3-Creando%20el%20Menu.md)

@@ -79,4 +79,4 @@ npm run start
 
 Vemos que podemos consultar nuestra `API` de pruebas en http://localhost:3004/paises.
 
-[Consultar API](./6-Consultar la API.md)
+[Consultar API](https://github.com/fdqc/simple-react-app-tutorial/blob/master/es/6-Consultar%20la%20API.md)

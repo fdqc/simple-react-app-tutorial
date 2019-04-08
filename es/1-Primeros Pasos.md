@@ -22,5 +22,5 @@ Con `cd paises-app` ingresamos al directorio donde se encuentra nuestra aplicaci
 
 Para terminar la ejecución de la `build` de desarrollo presionamos `Ctrl+C`.
 
-[Preparar el Proyecto](./2-Preparar el Proyecto.md)
+[Preparar el Proyecto](https://github.com/fdqc/simple-react-app-tutorial/blob/master/es/2-Preparar%20el%20Proyecto.md)
 

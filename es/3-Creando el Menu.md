@@ -75,4 +75,4 @@ class App extends Component {
 export default App;
 ```
 
-[Usar React Router](./4-Usar React Router.md)
+[Usar React Router](https://github.com/fdqc/simple-react-app-tutorial/blob/master/es/4-Usar%20React%20Router.md)

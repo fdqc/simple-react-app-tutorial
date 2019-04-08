@@ -185,5 +185,5 @@ Notemos, que agregamos un `Route` nuevo, donde no especificamos el `path`, pero 
 
 [^Nota]: El componente `NoExiste` debe ir siempre al final.
 
-[Simular una API](./5-Simular una API.md)
+[Simular una API](https://github.com/fdqc/simple-react-app-tutorial/blob/master/es/5-Simular%20una%20API.md)
 
