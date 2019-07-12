@@ -2,11 +2,11 @@
 
 ###### Español
 
-El propósito de este proyecto es el de servir como una introducción básica al desarrollo de SPAs (Simple Page Applications) usando ReactJs.
+El propósito de este proyecto es el de servir como una introducción básica al desarrollo de SPAs (Single Page Applications) usando ReactJs.
 
 ###### English
 
-The purpose of this project is to serve as a basic introduction to the development of SPAs (Simple Page Applications) using ReactJs.
+The purpose of this project is to serve as a basic introduction to the development of SPAs (Single Page Applications) using ReactJs.
 
 #### Licencia / License
 
