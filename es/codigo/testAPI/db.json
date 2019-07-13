@@ -1,0 +1,18 @@
+{
+  "paises": [
+    {
+      "codigoPais": 1,
+      "nombreLargoPais": "Republica Argentina",
+      "nombreCortoPais": "Argentina",
+      "abreviaturaPais": "AR",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Flag_of_Argentina.svg"
+    },
+    {
+      "codigoPais": 2,
+      "nombreLargoPais": "Republica de Zimbabwe",
+      "nombreCortoPais": "Zimbabwe",
+      "abreviaturaPais": "ZW",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Flag_of_Zimbabwe.svg"
+    }
+  ]
+}
